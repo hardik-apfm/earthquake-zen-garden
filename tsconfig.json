@@ -1,0 +1,28 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["dom", "dom.iterable", "es6"],
+    "allowJs": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "outDir": "./dist/",
+    "baseUrl": "./src",
+    "rootDir": ".",
+    "removeComments": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "typeRoots": ["node_modules/@types", "src/typings"]
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist"
+  ]
+}
