@@ -1,0 +1,14 @@
+.avatar {
+  width: auto;
+  height: 200px;
+  position: relative;
+  top: 60px;
+  padding-right: 16px;
+}
+
+.profileSection {
+  display: grid;
+  width: 500px;
+  margin: 0 auto;
+  grid-template-columns: 0.2fr 1fr;
+}

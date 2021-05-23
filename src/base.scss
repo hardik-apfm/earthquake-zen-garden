@@ -1,6 +1,6 @@
 $background: #ededed;
-$page-title: #777777;
-$label: #444444;
+$boulder: #777777;
+$tundora: #444444;
 $link: #0011bb;
 $link-clicked: #6600cc;
 
@@ -14,6 +14,7 @@ html {
   }
   body {
     margin: 0;
+    min-width: 656px;
   }
 }
 

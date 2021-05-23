@@ -1,7 +1,7 @@
 import './base.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import EarthquakeZengarden from './components/EarthquakeZengarden';
+import EarthquakeZengarden from 'Components/EarthquakeZengarden';
 
 ReactDOM.render(
   <EarthquakeZengarden />,

@@ -14,7 +14,15 @@ export interface Feature {
   id: string;
 }
 
-export interface FeatureProperty {
+export interface Params {
+  id: string
+}
+
+interface ObjectKeys {
+  [key: string]: string | number | null;
+}
+
+export interface FeatureProperty extends ObjectKeys{
   mag:     number;
   place:   string;
   time:    number;
@@ -65,4 +73,10 @@ export interface Site {
   title:     string;
   heroImage: string;
   logoImage: string;
+}
+
+export interface TwoColumnGrid {
+  columnMap: any;
+  data: any;
+  title: string;
 }

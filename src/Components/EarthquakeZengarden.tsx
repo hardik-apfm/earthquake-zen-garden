@@ -6,21 +6,25 @@ import {
   Route
 } from 'react-router-dom';
 import Profile from './Profile';
-import Record from './Record';
 import Home from './Home';
+import routes from './routes';
+import Record from './Record';
 
 const EarthquakeZengarden = () => {
   return (
     <Router>
       <Header />
       <Switch>
-        <Route path='/profile'>
+        <Route path={routes.profile}>
           <Profile />
         </Route>
-        <Route path='/record/:id'>
+        <Route path={`${routes.record}/:id`}>
           <Record />
         </Route>
-        <Route path='/'>
+        <Route path={`${routes.home}`}>
+          <Home />
+        </Route>
+        <Route path={`${routes.root}`}>
           <Home />
         </Route>
       </Switch>

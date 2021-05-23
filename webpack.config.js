@@ -1,6 +1,6 @@
 const path = require("path");
 
-const app_dir = path.resolve(__dirname, '/src');
+const app_dir = path.resolve(__dirname, './src');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
@@ -63,6 +63,10 @@ const config = {
 	},
 	plugins: [HTMLWebpackPluginConfig],
 	resolve: {
+		alias: {
+			'Components': path.resolve(__dirname, 'src/Components'),
+			'Data': path.resolve(__dirname, 'src/Data'),
+		},
 		extensions: [".ts", ".tsx", ".js", ".jsx"]
 	},
 	optimization: {

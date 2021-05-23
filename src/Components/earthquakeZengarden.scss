@@ -1,0 +1,78 @@
+@import '../base.scss';
+
+@mixin center-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+@mixin center-grid {
+  display: grid;
+  justify-content: center;
+}
+
+.header {
+  height: #{$base-unit * 6};
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $background;
+  align-items: center;
+  padding: $base-unit;
+
+  & img {
+    width: #{$base-unit * 4};
+    height: auto;
+  }
+
+  & h2 {
+    color: $boulder;
+  }
+}
+
+.sectionTitle{
+  text-align: center;
+  color: $tundora;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.recordGrid {
+  @include center-grid;
+  grid-template-columns: 50% 20% 30%;
+  grid-gap: #{$base-unit / 2};
+}
+
+.recordSection {
+  @include center-section;
+  width: 640px;
+}
+
+.detailSection {
+  @include center-section;
+  width: 432px;
+
+  .sectionTitle {
+    text-align: left;
+  }
+}
+
+.detailGrid {
+  @include center-grid;
+  /*
+  grid-template-columns: 0.5fr 1fr;
+  */
+  grid-template-columns: 100px minmax(322px , auto);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 4px 8px;
+  max-height: 300px;
+  .column {
+    color: $tundora
+  }
+  .data {
+    color: $boulder
+  }
+}
