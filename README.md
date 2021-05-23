@@ -18,7 +18,7 @@ Eslint and Prettier has been added to support project wide formatting needs.
 `Components` folder contains every component used for the exercise.
 scss files has been declared at the same level as component.
 
-
+```
 ├── src
 │   ├── Components
 │   │   ├── EarthquakeZengarden.tsx
@@ -46,3 +46,4 @@ scss files has been declared at the same level as component.
 ├── tsconfig.json
 └── webpack.config.js
 
+```
