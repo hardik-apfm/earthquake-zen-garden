@@ -1,17 +1,5 @@
 @import '../base.scss';
 
-@mixin center-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-@mixin center-grid {
-  display: grid;
-  justify-content: center;
-}
-
 .header {
   height: #{$base-unit * 6};
   display: flex;
@@ -31,13 +19,9 @@
   }
 }
 
-.sectionTitle{
+.sectionTitle {
   text-align: center;
   color: $tundora;
-}
-
-.centerText {
-  text-align: center;
 }
 
 .recordGrid {
@@ -51,28 +35,7 @@
   width: 640px;
 }
 
-.detailSection {
-  @include center-section;
-  width: 432px;
-
-  .sectionTitle {
-    text-align: left;
-  }
+.centerText {
+  text-align: center;
 }
 
-.detailGrid {
-  @include center-grid;
-  /*
-  grid-template-columns: 0.5fr 1fr;
-  */
-  grid-template-columns: 100px minmax(322px , auto);
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 4px 8px;
-  max-height: 300px;
-  .column {
-    color: $tundora
-  }
-  .data {
-    color: $boulder
-  }
-}

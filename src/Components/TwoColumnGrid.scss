@@ -1,0 +1,26 @@
+@import '../base.scss';
+
+.detailSection {
+  @include center-section;
+  width: 432px;
+
+  .sectionTitle {
+    text-align: left;
+  }
+}
+
+.detailGrid {
+  @include center-grid;
+  grid-template-columns: 100px minmax(322px, auto);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 4px 8px;
+  max-height: 300px;
+
+  .column {
+    color: $tundora
+  }
+
+  .data {
+    color: $boulder
+  }
+}

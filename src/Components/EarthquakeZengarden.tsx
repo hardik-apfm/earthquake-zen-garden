@@ -1,10 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Profile from './Profile';
 import Home from './Home';
 import routes from './routes';
@@ -29,7 +25,7 @@ const EarthquakeZengarden = () => {
         </Route>
       </Switch>
     </Router>
-  )
+  );
 };
 
 export default EarthquakeZengarden;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import { Feature, FeatureProperty, Params } from './Interface';
-import zengardenData from '../Data/zengardern-data.json';
+import zengardenData from 'Data/zengardern-data.json';
 import TwoColumnGrid from 'Components/TwoColumnGrid';
 
 const features: Feature[] = zengardenData?.data?.features;
@@ -13,6 +13,7 @@ const columnMap: Record<string, string> = {
   tsunami: 'Tsunami',
   type: 'Type',
 };
+
 const Record = () => {
   const params = useParams<Params>();
   const properties: FeatureProperty =

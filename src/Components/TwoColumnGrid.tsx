@@ -1,7 +1,7 @@
 import React from 'react';
 import { TwoColumnGrid } from './Interface';
-import classes from './earthquakeZengarden.scss';
-import { formattedDateAndTime } from './utils';
+import { formattedDateAndTime } from 'Components/utils';
+import classes from 'Components/TwoColumnGrid.scss';
 
 const TwoColumnGrid = ({ columnMap, title, data }: TwoColumnGrid) => {
   return (
@@ -12,9 +12,7 @@ const TwoColumnGrid = ({ columnMap, title, data }: TwoColumnGrid) => {
           <React.Fragment key={`${key}-${index}`}>
             <div className={classes.column}>{columnMap?.[key]}</div>
             <div className={classes.data}>
-              {key === 'time'
-                ? formattedDateAndTime(data?.[key])
-                : data?.[key]}
+              {key === 'time' ? formattedDateAndTime(data?.[key]) : data?.[key]}
             </div>
           </React.Fragment>
         ))}
