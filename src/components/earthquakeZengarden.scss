@@ -1,0 +1,25 @@
+@import '../base.scss';
+
+.header {
+  height: #{$base-unit * 6};
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $background;
+  align-items: center;
+  padding: $base-unit;
+
+  & img {
+    width: #{$base-unit * 4};
+    height: auto;
+  }
+
+  & h2 {
+    color: $page-title;
+  }
+}
+
+.recordGrid {
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+}

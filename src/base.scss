@@ -1,0 +1,26 @@
+$background: #ededed;
+$page-title: #777777;
+$label: #444444;
+$link: #0011bb;
+$link-clicked: #6600cc;
+
+$font-family: sans-serif;
+
+$base-unit: 8px;
+
+html {
+  & > * {
+    font-family: $font-family;
+  }
+  body {
+    margin: 0;
+  }
+}
+
+a:visited {
+  color: $link-clicked
+}
+
+a {
+  color: $link;
+}
