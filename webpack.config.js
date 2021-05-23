@@ -66,6 +66,7 @@ const config = {
 		alias: {
 			'Components': path.resolve(__dirname, 'src/Components'),
 			'Data': path.resolve(__dirname, 'src/Data'),
+			'Images': path.resolve(__dirname, 'src/Images'),
 		},
 		extensions: [".ts", ".tsx", ".js", ".jsx"]
 	},

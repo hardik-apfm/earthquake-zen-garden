@@ -1,9 +1,13 @@
 .avatar {
-  width: auto;
+  width: 200px;
   height: 200px;
   position: relative;
   top: 60px;
   padding-right: 16px;
+  img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .profileSection {

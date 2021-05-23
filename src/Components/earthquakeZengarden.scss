@@ -19,6 +19,10 @@
   }
 }
 
+.cursorHand {
+  cursor: pointer;
+}
+
 .sectionTitle {
   text-align: center;
   color: $tundora;
@@ -37,5 +41,11 @@
 
 .centerText {
   text-align: center;
+}
+
+.sortIcon {
+  width: auto;
+  height: 12px;
+  padding-left: 8px;
 }
 

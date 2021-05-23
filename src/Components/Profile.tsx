@@ -10,7 +10,7 @@ const columnMap: Record<string, string> = {
   lastName: 'Last name',
   phone: 'Phone',
   email: 'Email',
-  bio: 'Bio'
+  bio: 'Bio',
 };
 
 const profile: Profile = zengardenData?.profile;
@@ -18,14 +18,12 @@ const profile: Profile = zengardenData?.profile;
 const Profile = () => {
   return (
     <div className={classes.profileSection}>
-      <img className={classes.avatar} src={profile.avatarImage} />
-      <TwoColumnGrid
-        columnMap={columnMap}
-        data={profile}
-        title={'Profile'}
-      />
+      <div className={classes.avatar}>
+        <img src={profile.avatarImage} />
+      </div>
+      <TwoColumnGrid columnMap={columnMap} data={profile} title={'Profile'} />
     </div>
   );
-}
+};
 
 export default Profile;
